@@ -89,7 +89,7 @@ function createWindow() {
     const { width, height } = screen.getPrimaryDisplay().workAreaSize;
 
     mainWindow = new BrowserWindow({
-        icon: path.join(__dirname, 'gpt.ico'),
+        icon: path.join(__dirname, 'gpt.icns'),
         width: sidebarWidth,
         height,
         x: width - sidebarWidth,
@@ -218,7 +218,7 @@ function smoothToggleWindow(targetWidth, duration) {
 
 
 function createTray() {
-    tray = new Tray(path.join(__dirname, 'gpt.ico')); // 替换为您的图标路径
+    tray = new Tray(path.join(__dirname, 'gpt.icns')); // 替换为您的图标路径
 
     const contextMenu = Menu.buildFromTemplate([
         { label: '刷新网页', click: () => { mainWindow.reload(); } },
@@ -279,7 +279,7 @@ function createSettingsWindow() {
     }
 
     settingsWindow = new BrowserWindow({
-        icon: path.join(__dirname, 'gpt.ico'),
+        icon: path.join(__dirname, 'gpt.icns'),
         width: 600,
         height: 400,
         resizable: false,

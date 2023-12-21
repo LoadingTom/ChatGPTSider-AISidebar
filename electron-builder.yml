@@ -1,0 +1,7 @@
+appId: com.loadingtom.gptsider
+productName: GPT-Sider
+directories:
+  output: ./dist
+mac:
+  target: dmg
+
